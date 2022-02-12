@@ -19,6 +19,7 @@ class UILabelViewController: UIViewController {
        label.textColor = .black
        label.numberOfLines = 0
        label.textAlignment = .center
+       label.font = label.font.withSize(30)
 
        label.shadowColor = .white
        label.shadowOffset = CGSize(width: 5, height: 5)

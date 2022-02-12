@@ -14,6 +14,8 @@
 		1E8882F527B65C32005EF07A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8882F427B65C32005EF07A /* Assets.xcassets */; };
 		1E8882F827B65C32005EF07A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8882F627B65C32005EF07A /* LaunchScreen.storyboard */; };
 		1E88830027B65C6E005EF07A /* UILabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8882FF27B65C6E005EF07A /* UILabelViewController.swift */; };
+		1EF670F427B7AC4B00848170 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF670F327B7AC4B00848170 /* UIButtonViewController.swift */; };
+		1EF670F727B7ACB900848170 /* InformationPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF670F627B7ACB900848170 /* InformationPack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1E8882F727B65C32005EF07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E8882F927B65C32005EF07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E8882FF27B65C6E005EF07A /* UILabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelViewController.swift; sourceTree = "<group>"; };
+		1EF670F327B7AC4B00848170 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
+		1EF670F627B7ACB900848170 /* InformationPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +78,18 @@
 			children = (
 				1E8882EF27B65C2E005EF07A /* StartScreenViewController.swift */,
 				1E8882FF27B65C6E005EF07A /* UILabelViewController.swift */,
+				1EF670F527B7AC6D00848170 /* UIButtonTutorial */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1EF670F527B7AC6D00848170 /* UIButtonTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				1EF670F327B7AC4B00848170 /* UIButtonViewController.swift */,
+				1EF670F627B7ACB900848170 /* InformationPack.swift */,
+			);
+			path = UIButtonTutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF670F427B7AC4B00848170 /* UIButtonViewController.swift in Sources */,
+				1EF670F727B7ACB900848170 /* InformationPack.swift in Sources */,
 				1E8882F027B65C2E005EF07A /* StartScreenViewController.swift in Sources */,
 				1E8882EC27B65C2E005EF07A /* AppDelegate.swift in Sources */,
 				1E8882EE27B65C2E005EF07A /* SceneDelegate.swift in Sources */,

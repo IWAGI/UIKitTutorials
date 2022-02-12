@@ -43,6 +43,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="K4t-KZ-oBZ" kind="presentation" modalPresentationStyle="fullScreen" id="HWZ-zt-xds"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -112,10 +115,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVD-e4-N1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="963.76811594202911" y="124.55357142857142"/>
+            <point key="canvasLocation" x="812" y="-548"/>
+        </scene>
+        <!--Button View Controller-->
+        <scene sceneID="sy3-z4-iea">
+            <objects>
+                <viewController id="K4t-KZ-oBZ" customClass="UIButtonViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7c6-aa-c7f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIButtonImageBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-4J-n9p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-yQ-0Qm">
+                                <rect key="frame" x="354" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="JXP-ff-UiO"/>
+                                    <constraint firstAttribute="height" constant="40" id="Xbp-4Z-yBE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
+                                    <color key="baseForegroundColor" red="0.14793708920000001" green="0.17528685929999999" blue="0.23755329850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeButtonTapped" destination="K4t-KZ-oBZ" eventType="touchUpInside" id="Jbp-4u-kVq"/>
+                                    <action selector="closeButtonTapped" destination="exj-aL-Im2" eventType="touchUpInside" id="dJy-4a-mTJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dqJ-i8-zty"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LzO-4J-n9p" firstAttribute="top" secondItem="7c6-aa-c7f" secondAttribute="top" id="4LP-RC-ZMp"/>
+                            <constraint firstAttribute="bottom" secondItem="LzO-4J-n9p" secondAttribute="bottom" id="9kR-gw-WK3"/>
+                            <constraint firstItem="LzO-4J-n9p" firstAttribute="trailing" secondItem="dqJ-i8-zty" secondAttribute="trailing" id="RQ6-uH-NFt"/>
+                            <constraint firstItem="dqJ-i8-zty" firstAttribute="trailing" secondItem="SOy-yQ-0Qm" secondAttribute="trailing" constant="20" id="cRG-DO-8pg"/>
+                            <constraint firstItem="LzO-4J-n9p" firstAttribute="leading" secondItem="dqJ-i8-zty" secondAttribute="leading" id="hWX-hm-sgx"/>
+                            <constraint firstItem="SOy-yQ-0Qm" firstAttribute="top" secondItem="dqJ-i8-zty" secondAttribute="top" id="rIE-vR-vqb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iab-KW-mrj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="-548.4375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="UIButtonImageBackGround" width="3648" height="5472"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
