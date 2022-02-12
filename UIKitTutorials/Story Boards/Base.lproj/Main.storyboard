@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-vL-EWp">
-                                <rect key="frame" x="24" y="68" width="101.5" height="96"/>
+                                <rect key="frame" x="24" y="68" width="101.5" height="154"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w32-OM-VnC">
                                         <rect key="frame" x="0.0" y="0.0" width="101.5" height="38"/>
@@ -45,6 +45,20 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="K4t-KZ-oBZ" kind="presentation" modalPresentationStyle="fullScreen" id="HWZ-zt-xds"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-CX-RnE">
+                                        <rect key="frame" x="0.0" y="116" width="101.5" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="UIImage" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.41569432620000002" green="0.38795012849999999" blue="0.65508121249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="929-qq-2a3" kind="presentation" modalPresentationStyle="fullScreen" id="NpI-nO-ZWq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -159,6 +173,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iab-KW-mrj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="-548.4375"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="aRh-1M-Wb9">
+            <objects>
+                <viewController id="929-qq-2a3" customClass="UIImageViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rp-0F-l8q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h85-wZ-4uW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyv-1i-lNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="-548"/>
         </scene>
     </scenes>
     <resources>
