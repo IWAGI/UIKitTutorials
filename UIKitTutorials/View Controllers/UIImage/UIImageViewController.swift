@@ -11,7 +11,7 @@ class UIImageViewController: UIViewController {
     
     private let closeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.tintColor = .black
+        button.tintColor = .white
         button.setImage(UIImage.init(systemName: "xmark"), for: .normal)
         
         button.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
