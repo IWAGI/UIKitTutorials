@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-vL-EWp">
-                                <rect key="frame" x="24" y="68" width="101.5" height="154"/>
+                                <rect key="frame" x="24" y="24" width="208.5" height="212"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w32-OM-VnC">
-                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="208.5" height="38"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UILabelButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="UIlabel" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -34,7 +35,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glm-kv-oMI">
-                                        <rect key="frame" x="0.0" y="58" width="101.5" height="38"/>
+                                        <rect key="frame" x="0.0" y="58" width="208.5" height="38"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UIButtonButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="UIButton" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -48,7 +50,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-CX-RnE">
-                                        <rect key="frame" x="0.0" y="116" width="101.5" height="38"/>
+                                        <rect key="frame" x="0.0" y="116" width="208.5" height="38"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UIImageButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="UIImage" cornerStyle="capsule">
                                             <backgroundConfiguration key="background">
@@ -59,6 +62,21 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="929-qq-2a3" kind="presentation" modalPresentationStyle="fullScreen" id="NpI-nO-ZWq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-ts-ZBi">
+                                        <rect key="frame" x="0.0" y="174" width="208.5" height="38"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UIImageButton"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="UISegmentedControl" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.41569432620000002" green="0.38795012849999999" blue="0.65508121249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="GS9-fg-yW2" kind="presentation" id="epP-mt-WlF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,11 +99,11 @@
             <objects>
                 <viewController id="exj-aL-Im2" customClass="UILabelViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tk7-1l-aVM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqe-aF-ksn">
-                                <rect key="frame" x="350" y="44" width="40" height="40"/>
+                                <rect key="frame" x="311" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wtJ-7e-JE4"/>
                                     <constraint firstAttribute="width" constant="40" id="ygg-ac-jjO"/>
@@ -99,7 +117,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZU-D2-MAu">
-                                <rect key="frame" x="24" y="68" width="366" height="36"/>
+                                <rect key="frame" x="24" y="24" width="327" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.24674830510000001" green="0.48128074409999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -136,14 +154,14 @@
             <objects>
                 <viewController id="K4t-KZ-oBZ" customClass="UIButtonViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7c6-aa-c7f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIButtonImageBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-4J-n9p">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-yQ-0Qm">
-                                <rect key="frame" x="354" y="44" width="40" height="40"/>
+                                <rect key="frame" x="315" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="JXP-ff-UiO"/>
                                     <constraint firstAttribute="height" constant="40" id="Xbp-4Z-yBE"/>
@@ -179,7 +197,7 @@
             <objects>
                 <viewController id="929-qq-2a3" customClass="UIImageViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Rp-0F-l8q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="h85-wZ-4uW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -189,12 +207,77 @@
             </objects>
             <point key="canvasLocation" x="2270" y="-548"/>
         </scene>
+        <!--Segmented Control View Controller-->
+        <scene sceneID="vL5-Gr-6t2">
+            <objects>
+                <viewController id="GS9-fg-yW2" customClass="UISegmentedControlViewController" customModule="UIKitTutorials" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q58-sj-eFg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2mm-WM-XGy">
+                                <rect key="frame" x="24" y="60" width="327" height="32"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="" image="timelapse" catalog="system"/>
+                                    <segment title="" image="slowmo" catalog="system"/>
+                                    <segment title="" image="rays" catalog="system"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.78108173609999998" green="0.99951678509999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="lightChangeSegmentControl" destination="GS9-fg-yW2" eventType="valueChanged" id="Ivo-jM-a8i"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="segmentControlBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="ege-Xn-HiJ">
+                                <rect key="frame" x="24" y="111" width="327" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="RQu-A2-m72"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFK-fe-K7b">
+                                <rect key="frame" x="24" y="111" width="327" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="hE8-tH-4LS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uL6-8E-IOp"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="2mm-WM-XGy" firstAttribute="leading" secondItem="uL6-8E-IOp" secondAttribute="leading" constant="24" id="7kA-7e-AVj"/>
+                            <constraint firstItem="uL6-8E-IOp" firstAttribute="trailing" secondItem="ege-Xn-HiJ" secondAttribute="trailing" constant="24" id="GlC-sh-sKd"/>
+                            <constraint firstItem="uL6-8E-IOp" firstAttribute="trailing" secondItem="SFK-fe-K7b" secondAttribute="trailing" constant="24" id="HjL-8a-GqF"/>
+                            <constraint firstItem="ege-Xn-HiJ" firstAttribute="leading" secondItem="uL6-8E-IOp" secondAttribute="leading" constant="24" id="IBm-Db-4fi"/>
+                            <constraint firstItem="SFK-fe-K7b" firstAttribute="leading" secondItem="uL6-8E-IOp" secondAttribute="leading" constant="24" id="OGB-by-aOV"/>
+                            <constraint firstItem="SFK-fe-K7b" firstAttribute="top" secondItem="2mm-WM-XGy" secondAttribute="bottom" constant="20" id="VlH-NV-mIR"/>
+                            <constraint firstItem="2mm-WM-XGy" firstAttribute="centerX" secondItem="Q58-sj-eFg" secondAttribute="centerX" id="Ycb-40-fjc"/>
+                            <constraint firstItem="2mm-WM-XGy" firstAttribute="top" secondItem="uL6-8E-IOp" secondAttribute="top" constant="60" id="cYh-dX-Hxe"/>
+                            <constraint firstItem="ege-Xn-HiJ" firstAttribute="top" secondItem="2mm-WM-XGy" secondAttribute="bottom" constant="20" id="etE-Fp-hFk"/>
+                            <constraint firstItem="uL6-8E-IOp" firstAttribute="trailing" secondItem="2mm-WM-XGy" secondAttribute="trailing" constant="24" id="hdd-3z-OHI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alphaValueSegmentedControl" destination="2mm-WM-XGy" id="vhz-g7-WSd"/>
+                        <outlet property="textureImage" destination="SFK-fe-K7b" id="V8M-ZF-7BW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go7-Aq-XDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="-549.17541229385313"/>
+        </scene>
     </scenes>
     <resources>
         <image name="UIButtonImageBackGround" width="3648" height="5472"/>
+        <image name="rays" catalog="system" width="128" height="122"/>
+        <image name="segmentControlBackGround" width="2700" height="3840"/>
+        <image name="slowmo" catalog="system" width="128" height="122"/>
+        <image name="timelapse" catalog="system" width="128" height="122"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

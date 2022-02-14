@@ -11,6 +11,9 @@ class UIImageViewController: UIViewController {
     
     private let closeButton: UIButton = {
         let button = UIButton(type: .system)
+        
+        button.accessibilityIdentifier = "CloseButton"
+        
         button.tintColor = .white
         button.setImage(UIImage.init(systemName: "xmark"), for: .normal)
         
@@ -20,6 +23,9 @@ class UIImageViewController: UIViewController {
     
     private let mainImage: UIImageView = {
         let image = UIImageView()
+        
+        image.accessibilityIdentifier = "MainImage"
+        
         image.layer.cornerRadius = 10
         image.layer.borderWidth = 2
         image.layer.borderColor = UIColor.white.cgColor
@@ -36,12 +42,18 @@ class UIImageViewController: UIViewController {
     
     private let startButton: UIButton = {
         let button = UIButton(type: .system)
+        
+        button.accessibilityIdentifier = "StartButton"
+        
         button.addTarget(self, action: #selector(startButtonTapped), for: .touchUpInside)
         return button
     }()
     
     private let stopButton: UIButton = {
         let button = UIButton(type: .system)
+        
+        button.accessibilityIdentifier = "StopButton"
+        
         button.addTarget(self, action: #selector(stopButtonTapped), for: .touchUpInside)
         return button
     }()
